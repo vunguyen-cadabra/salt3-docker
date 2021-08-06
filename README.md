@@ -46,12 +46,13 @@ SOURCE_PATH=../salt3
 ```
 
 - Modify others configurations if needed.</br>
-eg: you can modify the port number of http/https instead of the default configuration shown below.
+
+Eg: you can modify the port number of http/https instead of the default configuration shown below.
 ```
 APP_PORT=80
 ```
 
-**4. Build docker**
+**3. Build docker**
 
 By using window command line ..etc<br />
 
@@ -64,7 +65,7 @@ docker-compose up -d
 if it's all successed, all the services are running as image below
 ![Mount](wiki/docker-desktop.JPG)
 
-**5. Access local site**
+**4. Access local site**
 
 http://salt3.local/
 
@@ -75,4 +76,6 @@ http://salt3.local/
 Show docker images (run on host machine)
 ```bash
 docker ps
-```									
+```		
+**5. Add vhost salt3.local vaf api.salt3.local**
+* open .vhost taij
