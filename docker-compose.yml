@@ -10,7 +10,7 @@ services:
         - 3000:3000
         - 8000:8000
         volumes:
-        - ${SOURCE_PATH}:/opt/www
+        - ${SOURCE_PATH}:/opt/www/salt3
         - ./apache/vhost.conf:/opt/docker/etc/httpd/vhost.conf
         environment:
         - DB_HOST=mysql56
