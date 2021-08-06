@@ -42,14 +42,13 @@ You may modify project paths <SOURCE DIRECTORY> in above directory with your loc
 
 Eg:
 ```
-SOURCE_PATH=../salt_crm
+SOURCE_PATH=../salt3
 ```
 
 - Modify others configurations if needed.</br>
 eg: you can modify the port number of http/https instead of the default configuration shown below.
 ```
 APP_PORT=80
-APP_SSL_PORT=443
 ```
 
 **4. Build docker**
@@ -57,17 +56,7 @@ APP_SSL_PORT=443
 By using window command line ..etc<br />
 
 1/ Go to docker's directory.<br />
-2/ Build image by command.<br />
-```bash
-docker-compose build
-```
-
-3/ Build containner.																				
-```bash
-docker-compose up
-```
-
-4/ Build image and Build containner.																				
+2/ Build image and Build containner.																				
 ```bash
 docker-compose up -d
 ```
@@ -77,35 +66,13 @@ if it's all successed, all the services are running as image below
 
 **5. Access local site**
 
-http://localhost/
+http://salt3.local/
 
-* if the default port 80/443 has modified in .env file, it's must be specified in the url properly.
+* if the default port 80 has modified in .env file, it's must be specified in the url properly.
 
 ## Useful commands inside container
-
-Get inside a containner
-eg:
-```bash
-    docker exec -it docker-salt_localsalt_1 bash
-```
 
 Show docker images (run on host machine)
 ```bash
 docker ps
 ```									
-
-- (Optional) Show all images (run on host machine):
-```bash
-docker images
-```
-
-## Modify the DB mysql connection of laravel-vue-project
-1. In .env file, modify the config:
-```bash
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=mysql
-DB_USERNAME=salt_user
-DB_PASSWORD=123456
-```
