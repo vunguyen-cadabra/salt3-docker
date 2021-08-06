@@ -66,7 +66,7 @@ if it's all successed, all the services are running as image below
 ![Mount](wiki/docker-desktop.JPG)
 
 **4. Add vhost salt3.local vaf api.salt3.local**
-* open .vhost tại C:\Windows\System32\drivers\etc\
+* open hosts tại C:\Windows\System32\drivers\etc\
 * thêm dòng mới 
     C:\Windows\System32\drivers\etc
 ```
