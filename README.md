@@ -36,7 +36,7 @@ Modify the source directory in .env file.
 SOURCE_PATH=<SOURCE DIRECTORY>
 ```
 
-- Application will be mounted to `/opt/www/salt-old/race_custom/salt_crm`
+- Application will be mounted to `/opt/www/salt3`
  
 You may modify project paths <SOURCE DIRECTORY> in above directory with your local paths.
 
@@ -65,6 +65,14 @@ docker-compose up -d
 if it's all successed, all the services are running as image below
 ![Mount](wiki/docker-desktop.JPG)
 
+**4. Add vhost salt3.local vaf api.salt3.local**
+* open .vhost tại C:\Windows\System32\drivers\etc\
+* thêm dòng mới 
+    C:\Windows\System32\drivers\etc
+```
+127.0.0.1 salt3.local api.salt3.local
+```		
+
 **4. Access local site**
 
 http://salt3.local/
@@ -77,5 +85,3 @@ Show docker images (run on host machine)
 ```bash
 docker ps
 ```		
-**5. Add vhost salt3.local vaf api.salt3.local**
-* open .vhost taij
