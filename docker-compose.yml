@@ -5,7 +5,7 @@ services:
         image: salt3
         ports:
         - ${FRONT_END_PORT}:80
-        - ${BACK_END_PORT}:8000
+        - ${BACK_END_PORT}:8080
         volumes:
         - ${SOURCE_PATH}:/opt/www/salt3
         - ./apache/vhost.conf:/opt/docker/etc/httpd/vhost.conf
